@@ -2,13 +2,33 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  /* text-align: center; */
+  /* padding-left: 50px; */
+}
 h2,
 h3 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+h2 {
+  position: relative;
+}
+h2.tit::before {
+  content: "sale";
+  letter-spacing: 2px;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  padding: 7px 15px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
 .pdt {
   border: 10px solid blue;
   width: 825px;
@@ -40,12 +60,45 @@ body {
 
   font-weight: bold;
 }
-.more-info {
-  /* margin-top: 20px; */
+.padsamp {
+  margin-bottom: 20px;
+}
+/* a::after{
+  content"
+} */
+/* .more-info {
+} */
+
+.color1 {
+  background-color: black;
+  /* display: inline-block; */
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 12px;
+  /* margin-left: 5px; */
+}
+
+.color2 {
+  background-color: blue;
+}
+.color3 {
+  background-color: red;
+}
+.color4 {
+  background-color: orange;
+}
+.color5 {
+  background-color: aqua;
+}
+.color6 {
+  background-color: green;
 }
 .more-info:link,
 .more-info:visited {
   color: black;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .more-info:hover,
 .more-info:active {
@@ -58,7 +111,8 @@ body {
   margin-bottom: 20px;
 }
 .det-list {
-  list-style: square;
+  list-style: circle;
+  position: relative;
   margin-bottom: 20px;
   margin-left: 20px;
 }
