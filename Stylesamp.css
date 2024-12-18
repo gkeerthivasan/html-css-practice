@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   /* text-align: center; */
@@ -136,4 +137,15 @@ body {
 .but:hover {
   color: black;
   background-color: white;
+}
+.box-1 {
+  float: left;
+  width: 120px;
+}
+.box-2 {
+  float: right;
+  width: 120px;
+}
+.tot {
+  width: 240px;
 }
